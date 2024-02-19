@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class SigninComponent {
 
+  userData:any;
+  isShowPass = false;
+  isValid = false;
+
+  constructor(){}
+
+  login(data:any){
+
+  }
+
+  toShowPassWord(){
+    this.isShowPass = !this.isShowPass;
+  }
+
 }
