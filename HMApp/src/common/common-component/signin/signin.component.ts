@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -7,18 +8,15 @@ import { Component } from '@angular/core';
 })
 export class SigninComponent {
 
-  userData:any;
-  isShowPass = false;
-  isValid = false;
+  
+ 
 
-  constructor(){}
+  constructor(private router:Router){}
 
-  login(data:any){
-
+  sinUp(){
+    this.router.navigateByUrl('/signUp')
   }
 
-  toShowPassWord(){
-    this.isShowPass = !this.isShowPass;
-  }
+ 
 
 }

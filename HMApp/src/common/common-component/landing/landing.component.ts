@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent {
 
+
 constructor(private router : Router){}
 
   signIn(){
@@ -21,6 +22,10 @@ constructor(private router : Router){}
     this.router.navigateByUrl('landing')
     console.log("landing Screen...!");
     
+  }
+
+  admin(){
+    this.router.navigateByUrl('/admin/adminlanding')
   }
 
 }

@@ -8,6 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome/fontawesome.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule, 
     MatRadioModule,
     MatIconModule,
+    // FontAwesomeModule
   ],
   exports:[
     SigninComponent,

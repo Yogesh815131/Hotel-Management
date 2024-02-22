@@ -1,4 +1,4 @@
-<div class="form-container">
+<!-- <div class="form-container">
     <form #loginForm="ngForm">
         <h3>Login Form</h3>
         <label>User Name</label><br>
@@ -19,9 +19,44 @@
         <br>
         <a routerLink="/user/usersignup">Create Account</a>
     </form>
+</div> -->
+
+<div id="container">
+    <div class="form-box">
+        <h1>Sign In</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <img src="../../../assets/icons8-user-24.png" class="img" alt="user">
+                    <input type="text" placeholder="User Name">
+                </div>
+
+                <!-- <div class="input-field">
+                    <img src="../../../assets/icons8-email-30.png" class="img" alt="">
+                    <input type="email" placeholder="Email">
+                </div> -->
+
+                <div class="input-field">
+                    <!-- <i class="fa-solid fa-lock"></i> -->
+                     <img src="../../../assets/icons8-lock-48.png" class="img" alt="">
+                    <input type="password" placeholder="Password">
+                </div>
+                <!-- <div class="input-field"> -->
+                    <!-- <i class="fa-solid fa-lock"></i> -->
+                     <!-- <img src="../../../assets/icons8-lock-48.png" class="img" alt="">
+                    <input type="password" placeholder="Conform password">
+                </div> -->
+
+
+                <p>Forgot password <a href="#">Click here</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" class="disable signIn"> Sign in</button>
+                <button type="button" class="signUp" (click)="sinUp()"> Sign up</button>
+            </div>
+            
+        </form>
+    </div>
+
 </div>
-
-
-<br>
-<br>
-<button class="btn btn-outline-success" >SignIn</button>
