@@ -1,58 +1,35 @@
-<!-- <div class="form-container">
-    <form #loginForm="ngForm">
-        <h3>Login Form</h3>
-        <label>User Name</label><br>
-        <input type="text" #userName="ngModel" ngModel name="uName" required pattern="^[a-zA-Z ]*$" minlength="6">
-        <div class="error-sms" *ngIf="userName?.errors?.['required'] && userName?.touched">*User Name is Required</div>
-        <div class="error-sms" *ngIf="userName?.errors?.['pattern'] && !userName?.errors?.['minlength']">User Name must be Alphabets</div>
-        <div class="error-sms" *ngIf="userName?.errors?.['minlength']">minimum 6 char required</div>
-        <br>
-        <label>Password</label><br>
-        <input [type]="isShowPass? 'text' : 'password'" #pass="ngModel" ngModel name="password" required>
-        <i class="bi bi-eye-fill iconEye" *ngIf="!isShowPass && pass?.touched" (click)="toShowPassWord()"></i>
-        <i class="bi bi-eye-slash-fill iconEye" *ngIf="isShowPass" (click)="toShowPassWord()" ></i>
-        <div class="error-sms" *ngIf="pass?.errors?.['required'] && pass?.touched">password is required</div>
-        <div class="error-sms" *ngIf="isValid">Invalid UserName And Password</div>
-        <br>
-        <br>
-        <button (click)="login(loginForm.value)">Submit</button>
-        <br>
-        <a routerLink="/user/usersignup">Create Account</a>
-    </form>
-</div> -->
-
 <div id="container">
     <div class="form-box">
         <h1>Sign Up</h1>
-        <form>
+        <form #signUpForm ="ngForm">
             <div class="input-group">
                 <div class="input-field">
                     <!-- <i class="fa-solid fa-user"></i> -->
-                    <img src="../../../assets/icons8-user-24.png" class="img" alt="user">
-                    <input type="text" placeholder="User Name">
+                    <img src="../../../assets/icons8-user-24.png"  class="img" alt="user">
+                    <input type="text" #username="ngModel" ngModel name="uName" placeholder="User Name">
                 </div>
 
                 <div class="input-field">
                     <img src="../../../assets/icons8-email-30.png" class="img" alt="">
-                    <input type="email" placeholder="Email">
+                    <input type="email" #email="ngModel" ngModel name="uEmail" placeholder="Email">
                 </div>
 
                 <div class="input-field">
                     <!-- <i class="fa-solid fa-lock"></i> -->
                      <img src="../../../assets/icons8-lock-48.png" class="img" alt="">
-                    <input type="password" placeholder="Password">
+                    <input type="password" #pass="ngModel" ngModel name="password" placeholder="Password">
                 </div>
                 <div class="input-field">
                     <!-- <i class="fa-solid fa-lock"></i> -->
                      <img src="../../../assets/icons8-lock-48.png" class="img" alt="">
-                    <input type="password" placeholder="Conform password">
+                    <input type="password" #confpass="ngModel" ngModel name="conformPass" placeholder="Conform password">
                 </div>
 
 
                 <p>Forgot password <a href="#">Click here</a></p>
             </div>
             <div class="btn-field">
-                <button type="button" class="disable" > Sign up</button>
+                <button type="button" (click)="signUp(signUpForm.value)" class="disable" > Sign up</button>
                 <button type="button" (click)="sinIp()"> Sign in</button>
             </div>
             

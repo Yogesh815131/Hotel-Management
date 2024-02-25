@@ -15,14 +15,17 @@
                 <a class="nav-link active mx-4" aria-current="page" href="#">About</a>
               </li>                 
               <li class="nav-item">
-                <a class="nav-link active mx-4" aria-current="page" href="#">Contact us</a>
+                <a class="nav-link active contact mx-4" aria-current="page" (click)="contact()" >Contact us</a>
               </li>                 
               <li class="nav-item">
                 <a class="nav-link active mx-4" aria-current="page" href="#">Service</a>
               </li>                 
             </ul>
-            
-            <button class="btn btn-outline-success" (click)="signIn()">SignIn</button>
+            <!-- <i class="fas fa-home"></i> -->
+            <button class="btn btn-outline-success" *ngIf="signshow" (click)="signIn()">SignIn</button>
+            <button class="btn btn-outline-success" *ngIf="hidebtn" (click)="journey('owner')">Owner</button>
+            <button class="btn btn-outline-success" *ngIf="hidebtn" (click)="journey('admin')">Admin</button>
+            <button class="btn btn-outline-success" *ngIf="hidebtn" (click)="journey('user')">User</button>
           </div>
         </div>
     </nav>

@@ -87,6 +87,10 @@ form p a{
     color: #3c00a0;
 }
 
+.home{
+    margin-left: 135px;
+}
+
 .btn-field{
     width: 100%;
     display: flex;

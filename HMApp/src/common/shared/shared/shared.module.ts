@@ -8,6 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from 'src/common/common-component/contact/contact.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome/fontawesome.module';
 
 
@@ -15,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     SigninComponent,
     SignupComponent,
-    LandingComponent
+    LandingComponent,
+    ContactComponent
   ],
   
   imports: [
@@ -27,11 +30,13 @@ import {MatIconModule} from '@angular/material/icon';
     MatRadioModule,
     MatIconModule,
     // FontAwesomeModule
+    HttpClientModule
   ],
   exports:[
     SigninComponent,
     SignupComponent,
-    LandingComponent
+    LandingComponent,
+    ContactComponent
   ]
 })
 export class SharedModule { }

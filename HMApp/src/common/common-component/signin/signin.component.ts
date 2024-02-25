@@ -17,6 +17,8 @@ export class SigninComponent {
     this.router.navigateByUrl('/signUp')
   }
 
- 
+  back(){
+    this.router.navigateByUrl('/landing')
+  }
 
 }

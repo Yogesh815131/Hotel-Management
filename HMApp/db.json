@@ -1,0 +1,29 @@
+{
+  "admin": [],
+  "owner": [
+    {
+      "id": "0e39",
+      "uName": "Yogita Patil",
+      "uEmail": "Yogita@gmail.com",
+      "password": "Yogita@123",
+      "conformPass": "Yogita@123"
+    },
+    {
+      "id": "b157",
+      "uName": "Yogita Patil",
+      "uEmail": "Yogita@gmail.com",
+      "password": "Yogesh@12",
+      "conformPass": "Yogesh@12"
+    },
+    {
+      "id": "5ede",
+      "uName": "Yogesh Jadhav",
+      "uEmail": "ky815131@gmail.com",
+      "password": "Yogesh@123",
+      "conformPass": "Yogesh@123"
+    }
+  ],
+  "user": [],
+  "hotelDetails": [],
+  "hotelBooking": []
+}
